@@ -1,5 +1,103 @@
-/* #header, #hero, #gallery, #footer genişlikleri 750px olmalı */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.content {
+  width: 750px;
+  margin: 20px auto;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.menu {
+  background-color: #777;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  user-select: none;
+}
+
+.menu span {
+  margin-right: 20px;
+}
+
+.hero {
+  background-color: #777;
+  padding: 100px 0;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 0 auto;
+  width: 750px;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+}
+
+.box {
+  width: 240px;
+  height: 180px;
+  background-color: #777;
+}
+
+.box-2 {
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  user-select: none;
+  text-align: center;
+}
+
+.footer {
+  width: 750px;
+  margin: 20px auto;
+  background-color: #777;
+  padding: 15px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.footer button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* #header, #hero, #gallery, #footer genişlikleri 750px olmalı */
 /* #menu bir <nav> olmalı */
 /* #menu içindeki linklerin arka plan rengi: #777 */
 /* #menu linklerine hover yapıldığında arka plan rengi: #000 */
